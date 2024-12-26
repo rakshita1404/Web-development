@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            body{
+                background-color: gray;
+                font-size: 23px;
+                color:aliceblue;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+            /* Defines borders for table */
+            table, th, td{
+                border: 3px solid black;
+                border-collapse: collapse; /* Combines border lines instead of individual boxes around */
+                border-color: brown;
+            }
+            th{
+                color: aqua;
+            }
+            td,th{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+              <th>Firstname</th>
+              <td>Jill</td>
+              <td>Eve</td>
+            </tr>
+            <tr>
+              <th>Lastname</th>
+              <td>Smith</td>
+              <td>Jackson</td>
+            </tr>
+            <tr>
+              <th>Age</th>
+              <td>94</td>
+              <td>50</td>
+            </tr>
+          </table>
+          <br>
+          <!-- Same header for multiple rows using rowspan -->
+          <table>
+            <tr>
+              <th>Name</th>
+              <td>Jill</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Phone</th>
+              <td>555-1234</td>
+            </tr>
+            <tr>
+              <td>555-8745</td>
+            </tr>
+          </table>
+    </body>
+</html>
+
+<!-- 
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table -->
