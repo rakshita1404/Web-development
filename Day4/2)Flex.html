@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox CSS Properties</title>
+    <style>
+        /* Container styles */
+        .flex-container {
+            display: flex; /* Enables flexbox */
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Item styles */
+        .flex-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox CSS Properties</h1>
+
+    <h2>1. display</h2>
+    <p>The <code>display</code> property with a value of <code>flex</code> enables flexbox on the container.</p>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <h2>2. flex-direction</h2>
+    <p>The <code>flex-direction</code> property defines the direction of the flex items.</p>
+    <div class="flex-container" style="flex-direction: row;">
+        <div class="flex-item">Row</div>
+        <div class="flex-item">Row</div>
+        <div class="flex-item">Row</div>
+    </div>
+    <div class="flex-container" style="flex-direction: column;">
+        <div class="flex-item">Column</div>
+        <div class="flex-item">Column</div>
+        <div class="flex-item">Column</div>
+    </div>
+
+    <h2>3. justify-content</h2>
+    <p>The <code>justify-content</code> property aligns the flex items along the main axis.</p>
+    <div class="flex-container" style="justify-content: flex-start;">
+        <div class="flex-item">Start</div>
+        <div class="flex-item">Start</div>
+        <div class="flex-item">Start</div>
+    </div>
+    <div class="flex-container" style="justify-content: center;">
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+    </div>
+    <div class="flex-container" style="justify-content: flex-end;">
+        <div class="flex-item">End</div>
+        <div class="flex-item">End</div>
+        <div class="flex-item">End</div>
+    </div>
+
+    <h2>4. align-items</h2>
+    <p>The <code>align-items</code> property aligns the flex items along the cross axis.</p>
+    <div class="flex-container" style="align-items: flex-start; height: 200px;">
+        <div class="flex-item">Start</div>
+        <div class="flex-item">Start</div>
+        <div class="flex-item">Start</div>
+    </div>
+    <div class="flex-container" style="align-items: center; height: 200px;">
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+    </div>
+    <div class="flex-container" style="align-items: flex-end; height: 200px;">
+        <div class="flex-item">End</div>
+        <div class="flex-item">End</div>
+        <div class="flex-item">End</div>
+    </div>
+
+    <h2>5. flex-wrap</h2>
+    <p>The <code>flex-wrap</code> property specifies whether the flex items should wrap or not.</p>
+    <div class="flex-container" style="flex-wrap: nowrap;">
+        <div class="flex-item">No Wrap</div>
+        <div class="flex-item">No Wrap</div>
+        <div class="flex-item">No Wrap</div>
+        <div class="flex-item">No Wrap</div>
+        <div class="flex-item">No Wrap</div>
+    </div>
+    <div class="flex-container" style="flex-wrap: wrap;">
+        <div class="flex-item">Wrap</div>
+        <div class="flex-item">Wrap</div>
+        <div class="flex-item">Wrap</div>
+        <div class="flex-item">Wrap</div>
+        <div class="flex-item">Wrap</div>
+    </div>
+
+    <h2>6. align-content</h2>
+    <p>The <code>align-content</code> property aligns the flex lines when there is extra space in the cross axis.</p>
+    <div class="flex-container" style="flex-wrap: wrap; align-content: flex-start; height: 200px;">
+        <div class="flex-item">Start</div>
+        <div class="flex-item">Start</div>
+        <div class="flex-item">Start</div>
+        <div class="flex-item">Start</div>
+        <div class="flex-item">Start</div>
+    </div>
+    <div class="flex-container" style="flex-wrap: wrap; align-content: center; height: 200px;">
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+    </div>
+    <div class="flex-container" style="flex-wrap: wrap; align-content: flex-end; height: 200px;">
+        <div class="flex-item">End</div>
+        <div class="flex-item">End</div>
+        <div class="flex-item">End</div>
+        <div class="flex-item">End</div>
+        <div class="flex-item">End</div>
+    </div>
+
+    <h2>7. flex-grow</h2>
+    <p>The <code>flex-grow</code> property specifies how much a flex item will grow relative to the rest of the flex items.</p>
+    <div class="flex-container">
+        <div class="flex-item" style="flex-grow: 1;">Grow 1</div>
+        <div class="flex-item" style="flex-grow: 2;">Grow 2</div>
+        <div class="flex-item" style="flex-grow: 3;">Grow 3</div>
+    </div>
+
+    <h2>8. flex-shrink</h2>
+    <p>The <code>flex-shrink</code> property specifies how much a flex item will shrink relative to the rest of the flex items.</p>
+    <div class="flex-container" style="width: 300px;">
+        <div class="flex-item" style="flex-shrink: 1;">Shrink 1</div>
+        <div class="flex-item" style="flex-shrink: 2;">Shrink 2</div>
+        <div class="flex-item" style="flex-shrink: 3;">Shrink 3</div>
+    </div>
+
+    <h2>9. flex-basis</h2>
+    <p>The <code>flex-basis</code> property specifies the initial size of a flex item before any space distribution.</p>
+    <div class="flex-container">
+        <div class="flex-item" style="flex-basis: 100px;">Basis 100px</div>
+        <div class="flex-item" style="flex-basis: 200px;">Basis 200px</div>
+        <div class="flex-item" style="flex-basis: 300px;">Basis 300px</div>
+    </div>
+
+    <h2>10. order</h2>
+    <p>The <code>order</code> property specifies the order of the flex items.</p>
+    <div class="flex-container">
+        <div class="flex-item" style="order: 3;">Order 3</div>
+        <div class="flex-item" style="order: 1;">Order 1</div>
+        <div class="flex-item" style="order: 2;">Order 2</div>
+    </div>
+</body>
+</html></div>

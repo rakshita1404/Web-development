@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Properties</title>
+    <style>
+        /* Basic styling for the grid container */
+        .grid-container {
+            display: grid; /* Defines a grid container */
+            grid-template-columns: repeat(3, 1fr); /* Defines three equal columns */
+            grid-template-rows: auto; /* Defines rows with automatic height */
+            gap: 10px; /* Defines the gap between grid items */
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        /* Styling for individual grid items */
+        .grid-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        /* Example of spanning multiple columns and rows */
+        .item1 {
+            grid-column: span 2; /* Spans two columns */
+        }
+
+        /* Example of placing an item in a specific grid area */
+        .item2 {
+            grid-column: 3 / 4; /* Starts at column 3 and ends at column 4 */
+            grid-row: 1 / 3; /* Starts at row 1 and ends at row 3 */
+        }
+        .item6 {
+            grid-column: 2/4; /*Starts at 2nd column and extends upto 4th */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Properties</h1>
+    <p>This page demonstrates various CSS Grid properties with examples and comments.</p>
+
+    <div class="grid-container">
+        <div class="grid-item item1">Item 1</div>
+        <div class="grid-item item2">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item item6">Item 6</div>
+    </div>
+
+    <h2>Explanation of CSS Grid Properties</h2>
+    <ul>
+        <li><strong>display: grid;</strong> - Defines the element as a grid container.</li>
+        <li><strong>grid-template-columns:</strong> - Specifies the number and size of columns in the grid.</li>
+        <li><strong>grid-template-rows:</strong> - Specifies the number and size of rows in the grid.</li>
+        <li><strong>gap:</strong> - Defines the space between grid items.</li>
+        <li><strong>grid-column:</strong> - Specifies the starting and ending column lines for a grid item.</li>
+        <li><strong>grid-row:</strong> - Specifies the starting and ending row lines for a grid item.</li>
+        <li><strong>grid-column: span [number];</strong> - Makes the grid item span across the specified number of columns.</li>
+        <li><strong>grid-row: span [number];</strong> - Makes the grid item span across the specified number of rows.</li>
+    </ul>
+</body>
+</html>

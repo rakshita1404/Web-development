@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Elements</title>
+    <style>
+        /* Styling for block elements */
+        .block-element {
+            display: block;
+            background-color: lightblue;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        /* Styling for inline elements */
+        .inline-element {
+            display: inline;
+            background-color: lightgreen;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inline and Block Elements</h1>
+
+    <!-- Block elements take up the full width available -->
+    <div class="block-element">This is a block element (div).</div>
+    <p class="block-element">This is another block element (p).</p>
+
+    <!-- Inline elements only take up as much width as necessary -->
+    <span class="inline-element">This is an inline element (span).</span>
+    <a href="#" class="inline-element">This is another inline element (a).</a>
+
+    <!-- Mixing inline and block elements -->
+    <div class="block-element">
+        This is a block element containing inline elements:
+        <span class="inline-element">Inline 1</span>
+        <span class="inline-element">Inline 2</span>
+    </div>
+</body>
+</html>

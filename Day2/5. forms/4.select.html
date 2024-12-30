@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic form</title>
+    </head>
+    <body>
+        <form>
+            <!-- For in label and name in input are linked together -->
+            <!-- The inputs in backend are accessed using the name field of input, while id is used for client side access -->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"> <br>
+
+            <!-- value specifies the default value to sent when selected-->
+            <!-- Select is same as radio but with a dropdox -->
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="Tata">Tata</option>
+                <option value="Honda">Honda</option>
+                <option value="Tesla" selected>Tesla</option>
+                <option value="BMW">BMW</option>
+                <!-- selected attribute sets the default selected value -->
+            </select><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic form</title>
+    </head>
+    <body>
+        <form>
+            <!-- For in label and name in input are linked together -->
+            <!-- The inputs in backend are accessed using the name field of input, while id is used for client side access -->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"> <br>
+
+            <!-- value specifies the default value to sent when selected-->
+            <input type="radio" id="html" name="fav_language" value="html">
+            <label for="fav_language">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="css">
+            <label for="fav_language">CSS</label><br>
+            <input type="radio" id="js" name="fav_language" value="js">
+            <label for="fav_language">Javascript</label><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

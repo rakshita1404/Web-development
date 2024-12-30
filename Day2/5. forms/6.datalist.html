@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic form</title>
+    </head>
+    <body>
+        <form>
+            <!-- For in label and name in input are linked together -->
+            <!-- The inputs in backend are accessed using the name field of input, while id is used for client side access -->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"> <br>
+            
+            <!-- The <datalist> element specifies a list of pre-defined options for an <input> element. -->
+            <label for="courses">Find a course: </label> <br>
+            <input list="courses">
+            <datalist id="courses">
+                <option value="Computer science">
+                <option value="Electronics and communication">
+                <option value="Robotics">
+                <option value="Information Technology">
+            </datalist>
+            <!-- Users will see a drop-down list of the pre-defined options as they input data.
+            The list attribute of the <input> element, must refer to the id attribute of the <datalist> element. -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

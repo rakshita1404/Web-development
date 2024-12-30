@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Properties</title>
+    <style>
+        /* Setting a solid background color */
+        .solid-background {
+            /* Sets the background color to light blue */
+            background-color: lightblue;
+            /* Adds padding inside the div */
+            padding: 20px;
+            /* Adds space below the div */
+            margin-bottom: 20px;
+        }
+
+        /* Setting a background image */
+        .image-background {
+            /* Sets a background image from the specified URL */
+            background-image: url('https://placehold.co/600x400/00FFBB/FFF');
+            /* Prevents the background image from repeating */
+            background-repeat: no-repeat;
+            /* Scales the background image to cover the entire div */
+            background-size: cover;
+            /* Adds padding inside the div */
+            padding: 20px;
+            /* Adds space below the div */
+            margin-bottom: 20px;
+        }
+
+        /* Setting a background gradient */
+        .gradient-background {
+            /* Sets a linear gradient background from red to yellow */
+            background: linear-gradient(to right, red, yellow);
+            /* Adds padding inside the div */
+            padding: 20px;
+            /* Adds space below the div */
+            margin-bottom: 20px;
+        }
+
+        /* Setting a background with multiple images */
+        .multiple-backgrounds {
+            /* Sets two background images from the specified URLs */
+            background-image: url('https://placehold.co/600x400/00FF00/FFF'), url('https://placehold.co/600x400/00BB00/FFF');
+            /* Positions the first image at the top left and the second image at the bottom right */
+            background-position: left top, right bottom;
+            /* Prevents the background images from repeating */
+            background-repeat: no-repeat;
+            /* Adds padding inside the div */
+            padding: 20px;
+            /* Adds space below the div */
+            margin-bottom: 20px;
+        }
+
+        /* Setting a fixed background image */
+        .fixed-background {
+            /* Sets a background image from the specified URL */
+            background-image: url('https://via.placeholder.com/150');
+            /* Fixes the background image so it doesn't scroll with the page */
+            background-attachment: fixed;
+            /* Scales the background image to cover the entire div */
+            background-size: cover;
+            /* Adds padding inside the div */
+            padding: 20px;
+            /* Adds space below the div */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="solid-background">
+        <!-- This div has a solid background color -->
+        Solid Background Color
+    </div>
+
+    <div class="image-background">
+        <!-- This div has a background image -->
+        Background Image
+    </div>
+
+    <div class="gradient-background">
+        <!-- This div has a background gradient -->
+        Background Gradient
+    </div>
+
+    <div class="multiple-backgrounds">
+        <!-- This div has multiple background images -->
+        Multiple Background Images
+    </div>
+
+    <div class="fixed-background">
+        <!-- This div has a fixed background image -->
+        Fixed Background Image
+    </div>
+</body>
+</html>

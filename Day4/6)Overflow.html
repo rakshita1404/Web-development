@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Properties</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        .overflow-visible {
+            overflow: visible;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        .overflow-scroll {
+            overflow: scroll;
+        }
+        .overflow-auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Overflow Properties</h1>
+    <p>The CSS <code>overflow</code> property controls what happens to content that is too big to fit into an area.</p>
+
+    <h2>overflow: visible;</h2>
+    <p>The <code>overflow: visible;</code> property means that the overflowed content is not clipped and will be rendered outside the element's box.</p>
+    <div class="container overflow-visible">
+        This is a container with <code>overflow: visible;</code>. The content inside this container is too large and will overflow outside the box.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+    </div>
+
+    <h2>overflow: hidden;</h2>
+    <p>The <code>overflow: hidden;</code> property means that the overflowed content is clipped, and the rest of the content will be invisible.</p>
+    <div class="container overflow-hidden">
+        This is a container with <code>overflow: hidden;</code>. The content inside this container is too large and will be clipped.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+    </div>
+
+    <h2>overflow: scroll;</h2>
+    <p>The <code>overflow: scroll;</code> property means that the overflowed content is clipped, but a scrollbar is added to see the rest of the content.</p>
+    <div class="container overflow-scroll">
+        This is a container with <code>overflow: scroll;</code>. The content inside this container is too large and will have a scrollbar.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+    </div>
+
+    <h2>overflow: auto;</h2>
+    <p>The <code>overflow: auto;</code> property means that the overflowed content is clipped, but a scrollbar is added only when necessary to see the rest of the content.</p>
+    <div class="container overflow-auto">
+        This is a container with <code>overflow: auto;</code>. The content inside this container is too large and will have a scrollbar if needed.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+    </div>
+</body>
+</html>

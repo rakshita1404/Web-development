@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classes</title>
+        <style>
+            body{
+                background-image: url("https://www.shutterstock.com/image-photo/blue-neon-illustration-background-soft-600nw-2471352461.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-family:'Times New Roman', Times, serif;
+                color: white;
+            }
+            .navbar{
+                width: 70%;
+                margin: auto;
+            }
+            .navbar ul{
+                display: flex;
+                margin: 30px;
+                padding: 0px 20px;
+                text-decoration: none;
+                list-style-type: none;
+                justify-content: space-around;
+                background-color: rgba(46, 49, 65, 0.4);
+                border: 2px solid rgb(36, 34, 34);
+                border-radius: 10px;
+            }
+            .navbar li{
+                padding: 10px;
+                color: rgba(129, 139, 148, 0.674);
+                font-size: 30px;
+            }
+            .navbar li:hover{
+                background-color: #313aa3;
+            }
+            #main-header{
+                margin-top: 40px;
+                text-align: center;
+                font-size: 80px;
+                color: white;
+            }
+            .gradient{
+                margin-top: 2px;
+                background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+                background-clip: text; /* chops the backgorund area to text */
+                -webkit-text-fill-color: transparent; /* Makes the text transparent to background backside */
+            }
+            .subtext{
+                color: rgba(196, 209, 221, 0.588);
+                font-size: 30px;
+            }
+            p {
+                padding: 2px; /* overwrite default */
+                margin: 2px;
+            }
+            .info {
+                font-size: 20px;
+                border: 2px solid rgb(104, 97, 97);
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .top-container{
+                display: flex;
+                justify-content: center;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                padding: 30px;
+                background-color: rgba(53, 56, 59, 0.588);
+                width: fit-content;
+            }
+            .container div{
+                padding: 20px;
+            }
+            .text-lg{
+                font-size: 40px;
+                font-weight: bolder;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div id="main-header">
+            <span class="info gradient">Hundreds of Integrations</span>
+            <p>Dimension is the new <br>
+                <span class="gradient">Standard for collaboration</span>
+            </p>
+            <p class="subtext">The delightfully smart collaboration platform</p>
+        </div>
+        <div class="top-container">
+            <div class="container">
+                <div>
+                    <p class="text-lg">500k+</p>
+                    <p class="subtext">Customers</p>
+                </div>
+                <div>
+                    <p class="text-lg">100k+</p>
+                    <p class="subtext">Active users</p>
+                </div>
+                <div>
+                    <p class="text-lg">200k+</p>
+                    <p class="subtext">Reviews</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- 
+The HTML class attribute specifies one or more class names for an element
+Classes are used by CSS and JavaScript to select and access specific elements
+The class attribute can be used on any HTML element
+The class name is case sensitive
+Different HTML elements can point to the same class name
+JavaScript can access elements with a specific class name with the getElementsByClassName() method -->
+
+<!-- The id attribute is used to specify a unique id for an HTML element
+The value of the id attribute must be unique within the HTML document
+The id attribute is used by CSS and JavaScript to style/select a specific element
+The value of the id attribute is case sensitive
+The id attribute is also used to create HTML bookmarks
+JavaScript can access an element with a specific id with the getElementById() method -->

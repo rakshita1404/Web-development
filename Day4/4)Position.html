@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Properties</title>
+    <style>
+        /* Container for demonstration */
+        .container {
+            border: 1px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Static Position (default) */
+        .static-box {
+            position: static;
+            background-color: lightblue;
+        }
+
+        /* Relative Position */
+        .relative-box {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            background-color: lightgreen;
+        }
+
+        /* Absolute Position */
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: lightcoral;
+        }
+
+        /* Fixed Position */
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* Sticky Position */
+        .sticky-box {
+            position: sticky; /* It won't work when overflow hidden and not enough height */
+            top: 0;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Position Properties</h1>
+    <p>This page demonstrates the different CSS position properties with examples and comments.</p>
+
+    <div class="container">
+        <h2>Static Position</h2>
+        <p>The <code>position: static;</code> property is the default position for HTML elements. It is not affected by the top, bottom, left, or right properties.</p>
+        <div class="static-box">
+            This is a static positioned box.
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <h2>Sticky Position</h2>
+        <p>The <code>position: sticky;</code> property toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+        <div class="sticky-box">
+            This is a sticky positioned box.
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Relative Position</h2>
+        <p>The <code>position: relative;</code> property positions the element relative to its normal position. The top, right, bottom, and left properties will cause it to be adjusted from its normal position.</p>
+        <div class="relative-box">
+            This is a relatively positioned box.
+        </div>
+    </div>
+
+    <div class="container" style="position: relative;">
+        <h2>Absolute Position</h2>
+        <p>The <code>position: absolute;</code> property positions the element relative to its nearest positioned ancestor (not static). If there is no such ancestor, it uses the document body, and moves along with page scrolling.</p>
+        <div class="absolute-box">
+            This is an absolutely positioned box.
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Fixed Position</h2>
+        <p>The <code>position: fixed;</code> property positions the element relative to the browser window. It will not move when the page is scrolled.</p>
+        <div class="fixed-box">
+            This is a fixed positioned box.
+        </div>
+    </div>
+
+</body>
+</html>

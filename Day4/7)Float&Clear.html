@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear Example</title>
+    <style>
+        /* Basic styling for the container */
+        .container {
+            width: 100%;
+            border: 1px solid #000;
+            padding: 10px;
+            overflow: hidden; /* Clearfix method to contain floated elements */
+        }
+
+        /* Float left */
+        .float-left {
+            float: left;
+            width: 45%;
+            margin-right: 5%;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* Float right */
+        .float-right {
+            float: right;
+            width: 45%;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Clear both */
+        .clear-both {
+            clear: both;
+            background-color: lightcoral;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- This div will float to the left -->
+        <div class="float-left">
+            <p>This div is floated to the left.</p>
+        </div>
+
+        <!-- This div will float to the right -->
+        <div class="float-right">
+            <p>This div is floated to the right.</p>
+        </div>
+
+        <!-- This div will clear both floats -->
+        <div class="clear-both">
+            <p>This div clears both floats and appears below the floated elements.</p>
+        </div>
+    </div>
+
+    <!-- Example of float with images -->
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" style="float: left; margin-right: 10px;">
+        <p>This paragraph wraps around the floated image. The image is floated to the left, and the text flows around it.</p>
+    </div>
+
+    <!-- Example of clearfix method -->
+    <div class="container clearfix">
+        <div class="float-left">
+            <p>This div is floated to the left.</p>
+        </div>
+        <div class="float-right">
+            <p>This div is floated to the right.</p>
+        </div>
+    </div>
+</body>
+</html></div>
